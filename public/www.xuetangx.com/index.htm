@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="学堂在线, MOOC，慕课，XuetangX, 清华大学，北京大学, 在线教育, 大规模开放式在线课程, 在线学习," />
+	<meta name="description" content="学堂在线是免费公开的MOOC（大规模开放在线课程）平台，是国家教育部MOOC研究中心官方合作平台，致力于通过来自国内外一流名校开设的免费网络学习课程，为公众提供系统的高等教育，让每一个中国人都有机会享受优质教育资源。通过和清华大学在线教育研究中心、以及国内外知名大学的紧密合作，学堂在线将不断增加课程的种类和丰富程度。" />
+	<meta name="renderer" content="webkit"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<title>Together</title>
+	<link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="static/css/reset.2d73afda293e.css" tppabs="http://www.xuetangx.com/static/css/reset.2d73afda293e.css">
+
+    <link rel="stylesheet" type="text/css" href="static/css/index.750c3a8f060d.css" tppabs="http://www.xuetangx.com/static/css/index.750c3a8f060d.css">
+    <link rel="stylesheet" type="text/css" href="static/css/media.14fe4c3798ee.css" tppabs="http://www.xuetangx.com/static/css/media.14fe4c3798ee.css">
+</head>
+
+<body class="index lang_zh-cn">
+<header id="header_bootstrap">
+	<div id="py_header_data" class="hide"
+	data-ajax="/header_ajax"
+	data-blurajax="/check_register_params"
+	data-loginsubmit="/v2/login_ajax"
+	data-emailregistersubmit="/v2/create_account"
+	data-phoneregistersubmit="/create_account_with_phone"
+    data-phonecode="/phone/validate"
+	data-code=""
+	></div>
+	<div ng-controller="headerAjaxCtrl">
+		<div class="header_top">
+			<div class="header wrap cf">
+				<div class="left fl cf">
+					<h1 class="fl"><a href="index.htm" tppabs="http://www.xuetangx.com/" title="学堂在线"><img src="static/images/logo.33eba6677473.png" tppabs="http://www.xuetangx.com/static/images/logo.33eba6677473.png" alt="logo" title="学堂在线" /></a></h1>
+					<nav class="fl">
+						<ul class="cf">
+							<li
+							><a href="courses.htm" tppabs="http://www.xuetangx.com/courses" title="课程">课程</a></li>
+							<li
+							><a href="partners.htm" tppabs="http://www.xuetangx.com/partners" title="院校">院校</a></li>
+                           <li
+							><a href="community/index.htm" tppabs="http://www.xuetangx.com/community" title="广场">广场</a></li>
+              <li
+              ><a href="cloud.htm" tppabs="http://www.xuetangx.com/cloud" title="学堂云">学堂云</a></li>
+              <li
+              ><a href="degreecourse.htm" tppabs="http://www.xuetangx.com/degreecourse" title="学位课">学位课</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="mobile_header">
+			<a href="index.htm" tppabs="http://www.xuetangx.com/"><img class="logo fl" src="static/images/logo.33eba6677473.png" tppabs="http://www.xuetangx.com/static/images/logo.33eba6677473.png" alt="logo" title="学堂在线" /></a>
+			<ul class="cf fr">
+				<li><a href="mobile.htm" tppabs="http://www.xuetangx.com/mobile" title="" target="_blank"><img src="static/images/phone/1.a0d94a6f45ad.png" tppabs="http://www.xuetangx.com/static/images/phone/1.a0d94a6f45ad.png" alt="" title="" /></a></li>
+				<li><a href="courses.htm" tppabs="http://www.xuetangx.com/courses" title="课程"><img src="static/images/phone/2.1948c266bf3f.png" tppabs="http://www.xuetangx.com/static/images/phone/2.1948c266bf3f.png" alt="课程" title="课程" /></a></li>
+				<li><a href="partners.htm" tppabs="http://www.xuetangx.com/partners" title="院校"><img src="static/images/phone/3.e32a463a04a5.png" tppabs="http://www.xuetangx.com/static/images/phone/3.e32a463a04a5.png" alt="院校" title="院校" /></a></li>
+				<li><a href="community/index.htm" tppabs="http://www.xuetangx.com/community" title="广场"><img src="static/images/phone/4.12a66edecc8c.png" tppabs="http://www.xuetangx.com/static/images/phone/4.12a66edecc8c.png" alt="广场" title="广场" /></a></li>
+					<li><a ng-click="goToLogin()" href="" title="登录"><img src="static/images/phone/5.7fdc93241166.png" tppabs="http://www.xuetangx.com/static/images/phone/5.7fdc93241166.png" alt="登录" title="登录" /></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div class="bg_hui pb_50">
+	<section class="wrap index_title">
+		<h2></h2>
+		<p>免费学习最好的课程！选择感兴趣的领域，加入课堂，开始学习吧！</p>
+	</section>
+	<section class="wrap index_kc_list" id="index_kc_list">
+		<ul class="cf">
+			<li class="cloud">
+				<div class="title">
+					<a class="title_a" href="javascript:if(confirm(%27http://www.xuetangx.com/knowledge/1/  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.xuetangx.com/knowledge/1/%27" tppabs="http://www.xuetangx.com/knowledge/1" title="" target="_blank"><i><img src="static/images/index_cloud.cbdc0def7c14.png" tppabs="http://www.xuetangx.com/static/images/index_cloud.cbdc0def7c14.png" alt="云计算" title="云计算" /></i><p>云计算</p></a>
+				</div>
+				<ol>
+					<li class="first">
+						<strong>入门</strong>
+						<a href="courses/MITx/6_00_1x/2014_T2/about.htm" tppabs="http://www.xuetangx.com/courses/MITx/6_00_1x/2014_T2/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/professor-grimson.9e074a08dd2b.jpg" tppabs="http://s.xuetangx.com/files/staff/image/professor-grimson.9e074a08dd2b.jpg" data-name="计算机科学和使用 Python 编程导论" data-txt="麻省理工学院 W. Eric L. Grimson">编程入门</a>
+						<a href="courses/TsinghuaX/30240184_2015X/2015_T1/about.htm" tppabs="http://www.xuetangx.com/courses/TsinghuaX/30240184_2015X/2015_T1/about" title="" target="_blank" data-img_src="c4x/TsinghuaX/30240184_1X/asset/junhuideng.jpg" tppabs="http://www.xuetangx.com/c4x/TsinghuaX/30240184_1X/asset/junhuideng.jpg" data-name="数据结构" data-txt="清华大学 邓俊辉">数据结构</a>
+					</li>
+					<li class="second">
+						<strong>进阶</strong>
+						<a href="courses/UC_BerkeleyX/CS169_1x_1/2014_T1/about.htm" tppabs="http://www.xuetangx.com/courses/UC_BerkeleyX/CS169_1x_1/2014_T1/about" title="" target="_blank" data-img_src="c4x/BerkeleyX/CS169_1x/asset/fox.jpg" tppabs="http://www.xuetangx.com/c4x/BerkeleyX/CS169_1x/asset/fox.jpg" data-name="云计算与软件工程—第一部分" data-txt="加州大学伯克利 Armando Fox">SaaS应用开发</a>
+						<a href="courses/UC_BerkeleyX/CS169.2x/_/about.htm" tppabs="http://www.xuetangx.com/courses/UC_BerkeleyX/CS169.2x/_/about" title="" target="_blank" data-img_src="c4x/BerkeleyX/CS169_1x/asset/fox.jpg" tppabs="http://www.xuetangx.com/c4x/BerkeleyX/CS169_1x/asset/fox.jpg" data-name="软件即服务 (SaaS) - 第 2 部分" data-txt="加州大学伯克利 Armando Fox">软件工程</a>
+					</li>
+					<li class="third">
+						<strong>探索</strong>
+						<a href="courses/LinuxFoundationX/LFS101x/_/about.htm" tppabs="http://www.xuetangx.com/courses/LinuxFoundationX/LFS101x/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/jerrycooperstein110x110.jpg" tppabs="http://s.xuetangx.com/files/staff/image/jerrycooperstein110x110.jpg" data-name="Linux 导论" data-txt="Linux 基金会 Jerry Cooperstein">Linux</a>
+						<a href="courses/MITx/21W.789x/_/about.htm" tppabs="http://www.xuetangx.com/courses/MITx/21W.789x/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/mobile_bentley_x110.jpg" tppabs="http://s.xuetangx.com/files/staff/image/mobile_bentley_x110.jpg" data-name="打造移动体验" data-txt="麻省理工学院 Frank Bentley">移动应用开发</a>
+					</li>
+				</ol>
+				<p><a href="javascript:if(confirm(%27http://www.xuetangx.com/knowledge/1/  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.xuetangx.com/knowledge/1/%27" tppabs="http://www.xuetangx.com/knowledge/1" title="" target="_blank">7门课程<i></i></a></p>
+			</li>
+			<li class="data">
+				<div class="title">
+					<a class="title_a" href="javascript:if(confirm(%27http://www.xuetangx.com/knowledge/2/  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.xuetangx.com/knowledge/2/%27" tppabs="http://www.xuetangx.com/knowledge/2" title="" target="_blank"><i><img src="static/images/index_data.767e03c2dfec.png" tppabs="http://www.xuetangx.com/static/images/index_data.767e03c2dfec.png" alt="数据分析" title="数据分析" /></i><p>数据科学</p></a>
+				</div>
+				<ol>
+					<li class="first">
+						<strong>入门</strong>
+						<a href="courses/MITx/6_00_2x/2014_T2/about.htm" tppabs="http://www.xuetangx.com/courses/MITx/6_00_2x/2014_T2/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/professor-grimson.9e074a08dd2b.jpg" tppabs="http://s.xuetangx.com/files/staff/image/professor-grimson.9e074a08dd2b.jpg" data-name="计算思维和数据科学简介" data-txt="麻省理工学院 W. Eric L. Grimson">建模思维</a>
+						<a href="courses/UC_BerkeleyX/Stat2.1x/_/about.htm" tppabs="http://www.xuetangx.com/courses/UC_BerkeleyX/Stat2.1x/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/adhikari-small.503cba20f704.jpg" tppabs="http://s.xuetangx.com/files/staff/image/adhikari-small.503cba20f704.jpg" data-name="统计学入门：统计学概论" data-txt="加州伯克利 Ani Adhikari">统计</a>
+						<a href="courses/UC_BerkeleyX/Stat2.2x/_/about.htm" tppabs="http://www.xuetangx.com/courses/UC_BerkeleyX/Stat2.2x/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/adhikari-small.503cba20f704.jpg" tppabs="http://s.xuetangx.com/files/staff/image/adhikari-small.503cba20f704.jpg" data-name="统计学入门：概率" data-txt="加州伯克利 Ani Adhikari">概率</a>
+					</li>
+					<li class="second">
+						<strong>进阶</strong>
+						<a href="courses/UC_BerkeleyX/Stat2.3x/_/about.htm" tppabs="http://www.xuetangx.com/courses/UC_BerkeleyX/Stat2.3x/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/adhikari-small.503cba20f704.jpg" tppabs="http://s.xuetangx.com/files/staff/image/adhikari-small.503cba20f704.jpg" data-name="统计学入门：推断" data-txt="加州伯克利 Ani Adhikari">统计分析</a>
+						<a href="courses/CaltechX/CS1156x/_/about.htm" tppabs="http://www.xuetangx.com/courses/CaltechX/CS1156x/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/yaser_x110.jpg" tppabs="http://s.xuetangx.com/files/staff/image/yaser_x110.jpg" data-name="从数据中学习" data-txt="加州理工学院 Yaser S. Abu-Mostafa">机器学习</a>
+					</li>
+					<li class="third">
+						<strong>探索</strong>
+						<a href="courses/KIx/KIexploRx/_/about.htm" tppabs="http://www.xuetangx.com/courses/KIx/KIexploRx/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/andreas_stillbild110x110.jpg" tppabs="http://s.xuetangx.com/files/staff/image/andreas_stillbild110x110.jpg" data-name="研究R语言" data-txt="瑞典卡罗林斯卡学院 Andreas Montelius">R</a>
+						<a href="courses/MITx/15.071x/_/about.htm" tppabs="http://www.xuetangx.com/courses/MITx/15.071x/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/dimitrisbertsimas110x110.jpg" tppabs="http://s.xuetangx.com/files/staff/image/dimitrisbertsimas110x110.jpg" data-name="分析前沿" data-txt="麻省理工学院 Dimitris Bertsimas">分析框架</a>
+						<a href="courses/CornellX/ENGRI1280x/_/about.htm" tppabs="http://www.xuetangx.com/courses/CornellX/ENGRI1280x/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/stephen_wicker_x110.jpg" tppabs="http://s.xuetangx.com/files/staff/image/stephen_wicker_x110.jpg" data-name="窃听大数据：互联时代的隐私与监听" data-txt="康奈尔大学 Stephen B. Wicker">数据隐私</a>
+					</li>
+				</ol>
+				<p><a href="javascript:if(confirm(%27http://www.xuetangx.com/knowledge/2/  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.xuetangx.com/knowledge/2/%27" tppabs="http://www.xuetangx.com/knowledge/2" title="" target="_blank">9门课程<i></i></a></p>
+			</li>
+			<li class="venture">
+				<div class="title">
+					<a class="title_a" href="javascript:if(confirm(%27http://www.xuetangx.com/knowledge/3/  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.xuetangx.com/knowledge/3/%27" tppabs="http://www.xuetangx.com/knowledge/3" title="" target="_blank"><i><img src="static/images/index_venture.310894ada4cc.png" tppabs="http://www.xuetangx.com/static/images/index_venture.310894ada4cc.png" alt="创业管理" title="创业管理" /></i><p>创业管理</p></a>
+				</div>
+				<ol>
+					<li class="first">
+						<strong>入门</strong>
+						<a href="courses/MITx/15_390x/2014_T2/about.htm" tppabs="http://www.xuetangx.com/courses/MITx/15_390x/2014_T2/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/aulet_x110.jpg" tppabs="http://s.xuetangx.com/files/staff/image/aulet_x110.jpg" data-name="创业 101：你的客户是谁？" data-txt="麻省理工学院 Bill Aulet教授">用户定位</a>
+						<a href="courses/TsinghuaX/80512073_2015X/2015_T1/about.htm" tppabs="http://www.xuetangx.com/courses/TsinghuaX/80512073_2015X/2015_T1/about" title="" target="_blank" data-img_src="c4x/TsinghuaX/80512073X/asset/xiaoxing.jpg" tppabs="http://www.xuetangx.com/c4x/TsinghuaX/80512073X/asset/xiaoxing.jpg" data-name="财务分析与决策" data-txt="清华大学 肖星">财务分析</a>
+                        <a href="courses/TsinghuaX/80511503X/2015_T2/about.htm" tppabs="http://www.xuetangx.com/courses/TsinghuaX/80511503X/2015_T2/about" title="" target="_blank" data-img_src="c4x/TsinghuaX/80511503X/asset/zhengyuhuang.jpg" tppabs="http://www.xuetangx.com/c4x/TsinghuaX/80511503X/asset/zhengyuhuang.jpg" data-name="营销：人人都需要的一门课" data-txt="清华大学 郑毓煌">营销</a>
+					</li>
+					<li class="second">
+						<strong>进阶</strong>
+						<a href="courses/University_of_TorontoX/BE101x/_/about.htm" tppabs="http://www.xuetangx.com/courses/University_of_TorontoX/BE101x/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/dilip_soman_x110.jpg" tppabs="http://s.xuetangx.com/files/staff/image/dilip_soman_x110.jpg" data-name="行为经济学应用" data-txt="多伦多大学 Dilip Soman">消费决策</a>
+						<a href="courses/UTAustinX/UT.3.01x/_/about.htm" tppabs="http://www.xuetangx.com/courses/UTAustinX/UT.3.01x/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/hoberman_portrait_x110.jpg" tppabs="http://s.xuetangx.com/files/staff/image/hoberman_portrait_x110.jpg" data-name="全球化时代" data-txt="加州伯克利 John Hoberman">全球化</a>
+					</li>
+					<li class="third">
+						<strong>探索</strong>
+						<a href="courses/UQx/Think101x/_/about.htm" tppabs="http://www.xuetangx.com/courses/UQx/Think101x/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/jason-tangen_x110.jpg" tppabs="http://s.xuetangx.com/files/staff/image/jason-tangen_x110.jpg" data-name="日常思考的科学" data-txt="昆士兰大学 Jason Tangen">创新思维</a>
+						<a href="courses/HarvardX/GSE1.1x/_/about.htm" tppabs="http://www.xuetangx.com/courses/HarvardX/GSE1.1x/_/about" title="" target="_blank" data-img_src="../s.xuetangx.com/files/staff/image/robert_kegan_x110_0.jpg" tppabs="http://s.xuetangx.com/files/staff/image/robert_kegan_x110_0.jpg" data-name="迎接改变：提升自我的新途径" data-txt="哈佛大学 Robert Kegan">正能量</a>
+					</li>
+				</ol>
+				<p><a href="javascript:if(confirm(%27http://www.xuetangx.com/knowledge/3/  \n\nThis file was not retrieved by Teleport Pro, because it is linked too far away from its Starting Address. If you increase the in-domain depth setting for the Starting Address, this file will be queued for retrieval.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.xuetangx.com/knowledge/3/%27" tppabs="http://www.xuetangx.com/knowledge/3" title="" target="_blank">7门课程<i></i></a></p>
+			</li>
+			<li class="more">
+				<div class="title">
+					<a class="title_a" href="courses.htm" tppabs="http://www.xuetangx.com/courses" title="" target="_blank"><i><img src="static/images/index_more.c9176721cb81.png" tppabs="http://www.xuetangx.com/static/images/index_more.c9176721cb81.png" alt="更多选择" title="更多选择" /></i><p>更多选择</p></a>
+				</div>
+				<div class="list">
+					<a href="courses-cid=1.htm" tppabs="http://www.xuetangx.com/courses?cid=1" title="" target="_blank">生命科学</a>
+					<a href="courses-cid=7.htm" tppabs="http://www.xuetangx.com/courses?cid=7" title="" target="_blank">计算机</a>
+					<a href="courses-cid=9.htm" tppabs="http://www.xuetangx.com/courses?cid=9" title="" target="_blank">数据分析</a>
+					<a href="courses-cid=13.htm" tppabs="http://www.xuetangx.com/courses?cid=13" title="" target="_blank">社会科学</a>
+					<a href="courses-cid=15.htm" tppabs="http://www.xuetangx.com/courses?cid=15" title="" target="_blank">伦理哲思</a>
+					<a href="courses-cid=16.htm" tppabs="http://www.xuetangx.com/courses?cid=16" title="" target="_blank">思维训练</a>
+				</div>
+				<p><a href="courses.htm" tppabs="http://www.xuetangx.com/courses" title="" target="_blank">全部课程<i></i></a></p>
+			</li>
+		</ul>
+	</section>
+</div>
+<div class="new-courses wrap"  id="new-courses">
+	<h2>
+		<div class="fl"><span>最热课程</span>/ 每周持续更新...</div>
+		<ol class="fr cf"><li class="on">最热课程</li><li>近期开课</li><li>最新预告</li></ol>
+	</h2>
+	<div class="scroll_courses_wrap">
+		<div class="scroll_courses cf">
+			<ul class="cf">
+
+
+
+<li>
+	<a href="courses/MITx/15_390x_2015_T1/2015_T1/about.htm" tppabs="http://www.xuetangx.com/courses/MITx/15_390x_2015_T1/2015_T1/about" title="" target="_blank">
+		<div class="normal">
+			<img src="../storage.xuetangx.com/public_assets/xuetangx/course_cover/MITx_15_390x_2015_T1_2015_T1/cover_260x182.jpg" tppabs="http://storage.xuetangx.com/public_assets/xuetangx/course_cover/MITx_15_390x_2015_T1_2015_T1/cover_260x182.jpg" alt="" title="" />
+			<h3>创业101：你的客户是谁？ 15_390x_2015_T1</h3>
+			<p><span>
+					2天前更新
+				</span><span>5949 听课</span><span>118 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="c4x/MITx/15_390x_2015_T1/asset/aulet_x110.jpg" tppabs="http://www.xuetangx.com/c4x/MITx/15_390x_2015_T1/asset/aulet_x110.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>Bill Aulet</h4>
+					<p>麻省理工学院 斯隆管理学院 高级讲师</p>
+				</div>
+			</div>
+			<p class="txt">你有个产品创意，但你知道谁会买它吗？</p>
+			<p class="title"><span>创业101：你的客户是谁？</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/course-v1-TsinghuaX+THESIS2015X+2015_T1/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:TsinghuaX+THESIS2015X+2015_T1/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-TsinghuaX+THESIS2015X+2015_T1+type@asset+block@images_course_image.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+THESIS2015X+2015_T1+type@asset+block@images_course_image.jpg" alt="" title="" />
+			<h3>清华大学研究生学位论文答辩(2015) THESIS2015X</h3>
+			<p><span>
+					4分钟前更新
+				</span><span>1776 听课</span><span>19 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-TsinghuaX+THESIS2015X+2015_T1+type@asset+block@grad.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+THESIS2015X+2015_T1+type@asset+block@grad.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>清华大学研究生院</h4>
+					<p>  </p>
+				</div>
+			</div>
+			<p class="txt">2014年清华大学首次将研究生答辩以MOOC形式发布于学堂在线平台，今年将迎来第二次研究生答辩视频。期待您继续关注。</p>
+			<p class="title"><span>清华大学研究生学位论文答辩(2015)</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/UC_BerkeleyX/ColWri2_2x_2015_T1/2015_T1/about.htm" tppabs="http://www.xuetangx.com/courses/UC_BerkeleyX/ColWri2_2x_2015_T1/2015_T1/about" title="" target="_blank">
+		<div class="normal">
+			<img src="../storage.xuetangx.com/public_assets/xuetangx/course_cover/UC_BerkeleyX_ColWri2_2x_2015_T1_2015_T1/cover_260x182.jpg" tppabs="http://storage.xuetangx.com/public_assets/xuetangx/course_cover/UC_BerkeleyX_ColWri2_2x_2015_T1_2015_T1/cover_260x182.jpg" alt="" title="" />
+			<h3>英语写作指导Ⅱ ColWri2.2x</h3>
+			<p><span>
+					1周前更新
+				</span><span>1743 听课</span><span>71 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="c4x/UC_BerkeleyX/ColWri2_2x_2015_T1/asset/maggie_sokolik_x110.jpg" tppabs="http://www.xuetangx.com/c4x/UC_BerkeleyX/ColWri2_2x_2015_T1/asset/maggie_sokolik_x110.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>Maggie Sokolik</h4>
+					<p>  </p>
+				</div>
+			</div>
+			<p class="txt">针对英语语言学习者的写作入门课程，主要关注短文写作、语法使用和自我检查，分为三个部分，这是第Ⅱ部分。 </p>
+			<p class="title"><span>英语写作指导Ⅱ</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/MITx/uinov8x/_/about.htm" tppabs="http://www.xuetangx.com/courses/MITx/uinov8x/_/about" title="" target="_blank">
+		<div class="normal">
+			<img src="../storage.xuetangx.com/c4x/MITx/uinov8x/_/uinov8x-378x225.png" tppabs="http://storage.xuetangx.com/c4x/MITx/uinov8x/_/uinov8x-378x225.png" alt="" title="" />
+			<h3>用户创新：创业之路 uinov8x</h3>
+			<p><span>
+					1个月前更新
+				</span><span>35000 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="../storage.xuetangx.com/c4x/MITx/uinov8x/_/uinov8x-user-innovation-vonhippel-110x110.png" tppabs="http://storage.xuetangx.com/c4x/MITx/uinov8x/_/uinov8x-user-innovation-vonhippel-110x110.png" alt="" title="" />
+				<div class="js_content fl">
+					<h4>Eric von Hippel</h4>
+					<p>麻省理工学院 创新与工程系统 教授</p>
+				</div>
+			</div>
+			<p class="txt">解决你的问题。分享你的解决方案。开始你的冒险之旅。</p>
+			<p class="title"><span>用户创新：创业之路</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/UQx/Write101_x/_/about.htm" tppabs="http://www.xuetangx.com/courses/UQx/Write101_x/_/about" title="" target="_blank">
+		<div class="normal">
+			<img src="../storage.xuetangx.com/public_assets/xuetangx/course_cover/UQx_Write101_x__/cover_260x182.jpg" tppabs="http://storage.xuetangx.com/public_assets/xuetangx/course_cover/UQx_Write101_x__/cover_260x182.jpg" alt="" title="" />
+			<h3>英语语法和写作风格 Write101x</h3>
+			<p><span>
+					2天前更新
+				</span><span>2124 听课</span><span>126 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="c4x/UQx/Write101_x/asset/rospetelin-110x110.jpg" tppabs="http://www.xuetangx.com/c4x/UQx/Write101_x/asset/rospetelin-110x110.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>Roslyn Petelin</h4>
+					<p>昆士兰大学  </p>
+				</div>
+			</div>
+			<p class="txt">本课程中你将学习如何遣词造句，写出深受读者喜爱的、满足大学和专业要求的文章。</p>
+			<p class="title"><span>英语语法和写作风格</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/course-v1-UC_BerkeleyX+CS_184_1x+2015_T1/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:UC_BerkeleyX+CS_184_1x+2015_T1/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-UC_BerkeleyX+CS_184_1x+2015_T1+type@asset+block@images_course_image.jpg" tppabs="http://www.xuetangx.com/asset-v1:UC_BerkeleyX+CS_184_1x+2015_T1+type@asset+block@images_course_image.jpg" alt="" title="" />
+			<h3>计算机图形学导论 CS184.1x</h3>
+			<p><span>
+					1周前更新
+				</span><span>693 听课</span><span>26 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-UC_BerkeleyX+CS_184_1x+2015_T1+type@asset+block@images_ravi.jpg" tppabs="http://www.xuetangx.com/asset-v1:UC_BerkeleyX+CS_184_1x+2015_T1+type@asset+block@images_ravi.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>Ravi Ramamoorthi</h4>
+					<p>  </p>
+				</div>
+			</div>
+			<p class="txt">CS184.1x教授计算机图形学基础。学生通过本课程将学会制作实时和离线光线追踪3D场景的图像。</p>
+			<p class="title"><span>计算机图形学导论</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/course-v1-UQx+BIOIMG101x+2015_T1/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:UQx+BIOIMG101x+2015_T1/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-UQx+BIOIMG101x+2015_T1+type@asset+block@asset-v1-UQx_BIOIMG101x_2015_T1_type_asset_block_BIOIMAG101x_Course-Banner.png" tppabs="http://www.xuetangx.com/asset-v1:UQx+BIOIMG101x+2015_T1+type@asset+block@asset-v1-UQx_BIOIMG101x_2015_T1_type_asset_block_BIOIMAG101x_Course-Banner.png" alt="" title="" />
+			<h3>生物医学成像学导论 BIOIMG101x</h3>
+			<p><span>
+					3天前更新
+				</span><span>271 听课</span><span>31 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="graham_galloway110x110.jpg" tppabs="http://s.xuetangx.com/files/staff/image/graham_galloway110x110.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>Graham Galloway</h4>
+					<p>昆士兰大学 高级成像中心 教授</p>
+				</div>
+			</div>
+			<p class="txt">研究生物医学成像技术如何起到辅助作用，以及他们为卫生健康专业人员会提供哪些信息。</p>
+			<p class="title"><span>生物医学成像学导论</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/ANUx/igno101x/_/about.htm" tppabs="http://www.xuetangx.com/courses/ANUx/igno101x/_/about" title="" target="_blank">
+		<div class="normal">
+			<img src="../storage.xuetangx.com/c4x/ANUx/igno101x/_/igno101x-378x225.jpg" tppabs="http://storage.xuetangx.com/c4x/ANUx/igno101x/_/igno101x-378x225.jpg" alt="" title="" />
+			<h3>无知！ igno101x</h3>
+			<p><span>
+					1个月前更新
+				</span><span>4850 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="../storage.xuetangx.com/c4x/ANUx/igno101x/_/MichaelSmithson.png" tppabs="http://storage.xuetangx.com/c4x/ANUx/igno101x/_/MichaelSmithson.png" alt="" title="" />
+				<div class="js_content fl">
+					<h4>Michael Smithson</h4>
+					<p>澳洲国立大学 心理学研究学院 教授</p>
+				</div>
+			</div>
+			<p class="txt">发掘什么是无知，它起源于哪，人们用它来做什么，以及它在社会和文化中的角色。</p>
+			<p class="title"><span>无知！</span></p>
+		</div>
+	</a>
+</li>
+			</ul>
+			<ul class="cf">
+
+
+
+<li>
+	<a href="courses/course-v1-TsinghuaX+00690242+2015_TS/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:TsinghuaX+00690242+2015_TS/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-TsinghuaX+00690242+2015_TS+type@asset+block@images_course_image.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+00690242+2015_TS+type@asset+block@images_course_image.jpg" alt="" title="" />
+			<h3>文物精品与文化中国（2015年秋） 00690242X</h3>
+			<p><span>
+					3天后开课
+				</span><span>199 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-TsinghuaX+00690242+2015_TS+type@asset+block@penglin.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+00690242+2015_TS+type@asset+block@penglin.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>彭林</h4>
+					<p>清华大学 历史系 教授</p>
+				</div>
+			</div>
+			<p class="txt">本课程以精品文物作引子，将学术界探索中华文明的过程作为线索，介绍古代中国在造船、玉器等诸多领域的杰出成就，学生可以藉此获得对文化中国全方位的、直观而深入的认识。</p>
+			<p class="title"><span>文物精品与文化中国（2015年秋）</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/TsinghuaX/01030132X_2015X/2015_T2/about.htm" tppabs="http://www.xuetangx.com/courses/TsinghuaX/01030132X_2015X/2015_T2/about" title="" target="_blank">
+		<div class="normal">
+			<img src="../storage.xuetangx.com/public_assets/xuetangx/course_cover/TsinghuaX_01030132X_2015X_2015_T2/cover_260x182.jpg" tppabs="http://storage.xuetangx.com/public_assets/xuetangx/course_cover/TsinghuaX_01030132X_2015X_2015_T2/cover_260x182.jpg" alt="" title="" />
+			<h3>大学历史与文化（2015秋） 01030132X_2015X</h3>
+			<p><span>
+					3天后开课
+				</span><span>829 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="c4x/TsinghuaX/01030132X_2015X/asset/IMG_0290.jpg" tppabs="http://www.xuetangx.com/c4x/TsinghuaX/01030132X_2015X/asset/IMG_0290.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>白峰杉</h4>
+					<p>清华大学文化素质教育基地、清华大学数学科学系  </p>
+				</div>
+			</div>
+			<p class="txt">相信你渴望上大学, 但你了解大学的前世今生吗? 也许你正在读大学, 但你深入思考过大学的意义吗？ 甚至你读过了大学，但你真正理解大学的价值吗？--这门课程就是为你开的! </p>
+			<p class="title"><span>大学历史与文化（2015秋）</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/UC_BerkeleyX/ColWri2_3x_2015_T1/2015_T1/about.htm" tppabs="http://www.xuetangx.com/courses/UC_BerkeleyX/ColWri2_3x_2015_T1/2015_T1/about" title="" target="_blank">
+		<div class="normal">
+			<img src="../storage.xuetangx.com/public_assets/xuetangx/course_cover/UC_BerkeleyX_ColWri2_3x_2015_T1_2015_T1/cover_260x182.jpg" tppabs="http://storage.xuetangx.com/public_assets/xuetangx/course_cover/UC_BerkeleyX_ColWri2_3x_2015_T1_2015_T1/cover_260x182.jpg" alt="" title="" />
+			<h3>英语写作指导Ⅲ ColWri2_3x_2015_T1</h3>
+			<p><span>
+					5天后开课
+				</span><span>1203 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="c4x/UC_BerkeleyX/ColWri2_3x_2015_T1/asset/maggie_sokolik_x110.jpg" tppabs="http://www.xuetangx.com/c4x/UC_BerkeleyX/ColWri2_3x_2015_T1/asset/maggie_sokolik_x110.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>Maggie Sokolik</h4>
+					<p>  </p>
+				</div>
+			</div>
+			<p class="txt">针对英语语言学习者的学术写作入门课程，主要关注短文写作、语法使用和自我检查，分为三个部分，这是第Ⅲ部分。 </p>
+			<p class="title"><span>英语写作指导Ⅲ</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/course-v1-Stanford+WomensHealth+2015_T2/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:Stanford+WomensHealth+2015_T2/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-Stanford+WomensHealth+2015_T2+type@asset+block@images_course_image.jpg" tppabs="http://www.xuetangx.com/asset-v1:Stanford+WomensHealth+2015_T2+type@asset+block@images_course_image.jpg" alt="" title="" />
+			<h3>妇女健康和权益 GlobalHealth</h3>
+			<p><span>
+					3周后开课
+				</span><span>73 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-Stanford+WomensHealth+2015_T2+type@asset+block@AnneFirthMurray_副本.jpg" tppabs="http://www.xuetangx.com/asset-v1:Stanford+WomensHealth+2015_T2+type@asset+block@AnneFirthMurray_副本.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>Anne Firth Murray</h4>
+					<p>斯坦福大学 人类生物学 顾问教授</p>
+				</div>
+			</div>
+			<p class="txt">本课程对妇女健康和权益进行综述，从婴儿阶段、儿童时期，再到青少年、生育年龄到老年阶段均有涉及。 </p>
+			<p class="title"><span>妇女健康和权益</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/course-v1-TsinghuaX+70250023X_2015_2+2015_T2/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:TsinghuaX+70250023X_2015_2+2015_T2/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-TsinghuaX+70250023X_2015_2+2015_T2+type@asset+block@images_course_image.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+70250023X_2015_2+2015_T2+type@asset+block@images_course_image.jpg" alt="" title="" />
+			<h3>线性系统理论（2015秋） 70250023X</h3>
+			<p><span>
+					1个月后开课
+				</span><span>161 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-TsinghuaX+70250023X_2015_2+2015_T2+type@asset+block@zidonghua.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+70250023X_2015_2+2015_T2+type@asset+block@zidonghua.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>清华大学自动化系控制课组</h4>
+					<p>清华大学 自动化系 </p>
+				</div>
+			</div>
+			<p class="txt">线性系统理论是控制科学与工程学科的一门最为基本的理论性课程，也是进一步学习控制理论其它系列课程必备的基础。本课程强调严格的逻辑训练与培养研究生创新思维并重。 </p>
+			<p class="title"><span>线性系统理论（2015秋）</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/HKPolyUx/ana101x/_/about.htm" tppabs="http://www.xuetangx.com/courses/HKPolyUx/ana101x/_/about" title="" target="_blank">
+		<div class="normal">
+			<img src="../storage.xuetangx.com/c4x/HKPolyUx/ana101x/_/ana101x-human_anatomy-course_image-378x225.png" tppabs="http://storage.xuetangx.com/c4x/HKPolyUx/ana101x/_/ana101x-human_anatomy-course_image-378x225.png" alt="" title="" />
+			<h3>人体解剖学 ana101x</h3>
+			<p><span>
+					1个月后开课
+				</span><span>0 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="../storage.xuetangx.com/c4x/HKPolyUx/ana101x/_/ana101x-human_anatomy-yuen-110x110.png" tppabs="http://storage.xuetangx.com/c4x/HKPolyUx/ana101x/_/ana101x-human_anatomy-yuen-110x110.png" alt="" title="" />
+				<div class="js_content fl">
+					<h4>John Yuen</h4>
+					<p>香港理工大学 生物医学家 </p>
+				</div>
+			</div>
+			<p class="txt">本课程将从六个医疗专业的角度，以现实的中风案例带你探索人体结构。</p>
+			<p class="title"><span>人体解剖学</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/TsinghuaX/AP000000X/2015_T2/about.htm" tppabs="http://www.xuetangx.com/courses/TsinghuaX/AP000000X/2015_T2/about" title="" target="_blank">
+		<div class="normal">
+			<img src="../storage.xuetangx.com/public_assets/xuetangx/course_cover/TsinghuaX_AP000000X_2015_T2/cover_260x182.jpg" tppabs="http://storage.xuetangx.com/public_assets/xuetangx/course_cover/TsinghuaX_AP000000X_2015_T2/cover_260x182.jpg" alt="" title="" />
+			<h3>大学化学（先修课） AP000001X</h3>
+			<p><span>
+					1个月后开课
+				</span><span>2983 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="c4x/TsinghuaX/AP000000X/asset/lq.jpg" tppabs="http://www.xuetangx.com/c4x/TsinghuaX/AP000000X/asset/lq.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>李强</h4>
+					<p>清华大学 化学系 教授</p>
+				</div>
+			</div>
+			<p class="txt">化学是认识物质世界的重要窗口，是一门“中心的科学”。对于未来以研究物质世界为主要任务的理工科同学而言，打好坚实的化学基础，对建立完整的知识体系，培养多角度思考、分析和解决问题的能力，定会有莫大的帮助。 </p>
+			<p class="title"><span>大学化学（先修课）</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/TsinghuaX/30130274X/2015_T2/about.htm" tppabs="http://www.xuetangx.com/courses/TsinghuaX/30130274X/2015_T2/about" title="" target="_blank">
+		<div class="normal">
+			<img src="../storage.xuetangx.com/public_assets/xuetangx/course_cover/TsinghuaX_30130274X_2015_T2/cover_260x182.jpg" tppabs="http://storage.xuetangx.com/public_assets/xuetangx/course_cover/TsinghuaX_30130274X_2015_T2/cover_260x182.jpg" alt="" title="" />
+			<h3>光学工程基础 30130274X</h3>
+			<p><span>
+					1个月后开课
+				</span><span>1187 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="c4x/TsinghuaX/30130274X/asset/slq.jpg" tppabs="http://www.xuetangx.com/c4x/TsinghuaX/30130274X/asset/slq.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>孙利群</h4>
+					<p>清华大学 精密仪器系 教授</p>
+				</div>
+			</div>
+			<p class="txt">从探索宇宙的太空望远镜到观察微观世界的显微镜，从光纤通讯到激光制导，从眼镜到手机镜头，光学仪器不断改变着我们的生活。光学工程基础课程教你掌握光学仪器的工作原理。 </p>
+			<p class="title"><span>光学工程基础</span></p>
+		</div>
+	</a>
+</li>
+			</ul>
+			<ul class="cf">
+
+
+
+<li>
+	<a href="courses/course-v1-TsinghuaX+20250064+2015_T2/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:TsinghuaX+20250064+2015_T2/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-TsinghuaX+20250064+2015_T2+type@asset+block@模电MOOC课表-基础部分_2.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+20250064+2015_T2+type@asset+block@模电MOOC课表-基础部分_2.jpg" alt="" title="" />
+			<h3>模拟电子技术基础(基础部分)(2015秋) 20250064X</h3>
+			<p><span>
+					1天前更新
+				</span><span>23 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-TsinghuaX+20250064+2015_T2+type@asset+block@huazy.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+20250064+2015_T2+type@asset+block@huazy.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>华成英</h4>
+					<p>清华大学 自动化系 教授</p>
+				</div>
+			</div>
+			<p class="txt">电子技术的应用“无所不在”。不管哪个领域、哪个行业，为实现现代化、自动化、信息化，就必须配以电子系统。“电子技术基础”课程教授实现电子系统必备的基础知识。 </p>
+			<p class="title"><span>模拟电子技术基础(基础部分)(2015秋)</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/course-v1-NTHU+MOOC_00_006+2015_T2/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:NTHU+MOOC_00_006+2015_T2/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-NTHU+MOOC_00_006+2015_T2+type@asset+block@images_course_image.jpg" tppabs="http://www.xuetangx.com/asset-v1:NTHU+MOOC_00_006+2015_T2+type@asset+block@images_course_image.jpg" alt="" title="" />
+			<h3>细读张爱玲 MOOC_00_006</h3>
+			<p><span>
+					3天前更新
+				</span><span>161 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-NTHU+MOOC_00_006+2015_T2+type@asset+block@zhangjiaxian.jpg" tppabs="http://www.xuetangx.com/asset-v1:NTHU+MOOC_00_006+2015_T2+type@asset+block@zhangjiaxian.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>杨佳娴</h4>
+					<p>新竹清华大学 中文系 助理教授</p>
+				</div>
+			</div>
+			<p class="txt">以传奇身世与精致文学语言，张爱玲长年占据两岸三地读者视野，成为当代重要消费符码，是文化创意取之不尽的资源。本课程为张爱玲作品入门课程，让文字领头，来认识这一颗独秀心灵。</p>
+			<p class="title"><span>细读张爱玲</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/course-v1-MIT+15_390_2x+_/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:MIT+15_390_2x+_/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-MIT+15_390_2x+_+type@asset+block@asset-v1-MIT_15_390_2x___type_asset_block_15.390.2x_Entrepreneurship_102_Thumbnail.png" tppabs="http://www.xuetangx.com/asset-v1:MIT+15_390_2x+_+type@asset+block@asset-v1-MIT_15_390_2x___type_asset_block_15.390.2x_Entrepreneurship_102_Thumbnail.png" alt="" title="" />
+			<h3>创业102:你能为客户做什么？ 15.390.2x</h3>
+			<p><span>
+					4天前更新
+				</span><span>103 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-MIT+15_390_2x+_+type@asset+block@aulet_x110.jpg" tppabs="http://www.xuetangx.com/asset-v1:MIT+15_390_2x+_+type@asset+block@aulet_x110.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>Bill Aulet</h4>
+					<p>  </p>
+				</div>
+			</div>
+			<p class="txt">你可以为你的客户做些什么？</p>
+			<p class="title"><span>创业102:你能为客户做什么？</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/course-v1-TsinghuaX+00990021X+2015_T2/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:TsinghuaX+00990021X+2015_T2/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-TsinghuaX+00990021X+2015_T2+type@asset+block@images_course_image.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+00990021X+2015_T2+type@asset+block@images_course_image.jpg" alt="" title="" />
+			<h3>绿色建筑与可持续发展 00990021X</h3>
+			<p><span>
+					2天前更新
+				</span><span>88 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-TsinghuaX+00990021X+2015_T2+type@asset+block@zhuyingxin.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+00990021X+2015_T2+type@asset+block@zhuyingxin.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>朱颖心</h4>
+					<p>清华大学 建筑学院 教授</p>
+				</div>
+			</div>
+			<p class="txt">了解绿色建筑的概念、发展历史与最新成果、科学理念与适宜技术，各国绿色建筑发展异同及其原因，以及坚持适合我国国情的绿色建筑发展道路的科学性。</p>
+			<p class="title"><span>绿色建筑与可持续发展</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/course-v1-UC_BerkeleyX+CS169_2x+_/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:UC_BerkeleyX+CS169_2x+_/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-UC_BerkeleyX+CS169_2x+_+type@asset+block@asset-v1-UC_BerkeleyX_CS169_2x___type_asset_block_saas2-course_image.jpg" tppabs="http://www.xuetangx.com/asset-v1:UC_BerkeleyX+CS169_2x+_+type@asset+block@asset-v1-UC_BerkeleyX_CS169_2x___type_asset_block_saas2-course_image.jpg" alt="" title="" />
+			<h3>软件即服务 (SaaS) - 第 2 部分 CS169.2x</h3>
+			<p><span>
+					1周前更新
+				</span><span>65 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-UC_BerkeleyX+CS169_2x+_+type@asset+block@professor-fox.9f2dfcfcea67.jpg" tppabs="http://www.xuetangx.com/asset-v1:UC_BerkeleyX+CS169_2x+_+type@asset+block@professor-fox.9f2dfcfcea67.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>Armando Fox</h4>
+					<p>加州大学伯克利分校 计算机科学 教授</p>
+				</div>
+			</div>
+			<p class="txt">本门课程（CS 169.2x）将会在CS 169.1x的基础知识上，进一步教授复杂的基于软件即服务（SaaS）的敏捷（Agile）技巧，例如处理遗留代码。</p>
+			<p class="title"><span>软件即服务 (SaaS) - 第 2 部分</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/course-v1-TsinghuaX+30240233X_2015_T2+2015_T2/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:TsinghuaX+30240233X_2015_T2+2015_T2/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-TsinghuaX+30240233X_2015_T2+2015_T2+type@asset+block@课程封面.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+30240233X_2015_T2+2015_T2+type@asset+block@课程封面.jpg" alt="" title="" />
+			<h3>程序设计基础 （2015年秋） 30240233X_2015_T2</h3>
+			<p><span>
+					1周前更新
+				</span><span>196 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-TsinghuaX+30240233X_2015_T2+2015_T2+type@asset+block@教师照片_徐明星.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+30240233X_2015_T2+2015_T2+type@asset+block@教师照片_徐明星.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>徐明星</h4>
+					<p>清华大学 计算机系 副教授</p>
+				</div>
+			</div>
+			<p class="txt">如何从生活中提炼算法，使计算机能象人一样解决问题？如何运用计算思维，用计算机来提高人的能力？我们将为你呈现一个既熟悉又陌生的精彩世界，带你感悟不一样的计算人生。 </p>
+			<p class="title"><span>程序设计基础 （2015年秋）</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/course-v1-TsinghuaX+10610183X_2015_T2+2015_T2/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:TsinghuaX+10610183X_2015_T2+2015_T2/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-TsinghuaX+10610183X_2015_T2+2015_T2+type@asset+block@images_course_image.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+10610183X_2015_T2+2015_T2+type@asset+block@images_course_image.jpg" alt="" title="" />
+			<h3>思想道德修养与法律基础 (2015年秋) 10610183X</h3>
+			<p><span>
+					1周前更新
+				</span><span>111 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-TsinghuaX+10610183X_2015_T2+2015_T2+type@asset+block@zhangy.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+10610183X_2015_T2+2015_T2+type@asset+block@zhangy.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>张瑜</h4>
+					<p>清华大学 马克思主义学院 副教授</p>
+				</div>
+			</div>
+			<p class="txt">“大学之道，在明明德，在亲民，在止于至善。”《思想道德修养与法律基础》课程，带领初入大学之门的你，走入求真、求善、求美的思想旅程。 </p>
+			<p class="title"><span>思想道德修养与法律基础 (2015年秋)</span></p>
+		</div>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="courses/course-v1-TsinghuaX+00740113X_2015_T2+2015_T2/about.htm" tppabs="http://www.xuetangx.com/courses/course-v1:TsinghuaX+00740113X_2015_T2+2015_T2/about" title="" target="_blank">
+		<div class="normal">
+			<img src="asset-v1-TsinghuaX+00740113X_2015_T2+2015_T2+type@asset+block@images_course_image.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+00740113X_2015_T2+2015_T2+type@asset+block@images_course_image.jpg" alt="" title="" />
+			<h3>VC++面向对象与可视化程序设计 (2015年秋) 00740113X_2015_T2</h3>
+			<p><span>
+					1周前更新
+				</span><span>124 听课</span><span>0 留言</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+				<img class="fl" src="asset-v1-TsinghuaX+00740113X_2015_T2+2015_T2+type@asset+block@huangwt.jpg" tppabs="http://www.xuetangx.com/asset-v1:TsinghuaX+00740113X_2015_T2+2015_T2+type@asset+block@huangwt.jpg" alt="" title="" />
+				<div class="js_content fl">
+					<h4>黄维通</h4>
+					<p>清华大学 计算机系 教授</p>
+				</div>
+			</div>
+			<p class="txt">想掌握Windows编程基础吗？想掌握MFC编程基础吗？来一起学习此课程吧！ </p>
+			<p class="title"><span>VC++面向对象与可视化程序设计 (2015年秋)</span></p>
+		</div>
+	</a>
+</li>
+			</ul>
+		</div>
+	</div>
+	<p><a href="courses.htm" tppabs="http://www.xuetangx.com/courses" title="">显示全部课程（471）…</a></p>
+</div>
+
+<section class="wrap start_learning">
+	<h2><img src="static/images/footer_hc.295ea30aaefb.png" tppabs="http://www.xuetangx.com/static/images/footer_hc.295ea30aaefb.png" alt="喝一杯茶，学个新知识点，很简单！" title="喝一杯茶，学个新知识点，很简单！" /></h2>
+	<a href="/together-site-content/content.html" title="">开始学习<i></i></a>
+</section>
+
+<footer>
+    <div class="copyright">
+        <div class="text fl">
+            <p>Copyright  2015 Together</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="static/js/appSrc/appCommon.1c7c3f1b8788.js" tppabs="http://www.xuetangx.com/static/js/appSrc/appCommon.1c7c3f1b8788.js" ></script>
+	<script src="static/js/appSrc/homepage.ccc1fe02269a.js" tppabs="http://www.xuetangx.com/static/js/appSrc/homepage.ccc1fe02269a.js"></script>
+
+
+</body>
+</html>
